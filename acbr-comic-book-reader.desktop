@@ -1,1 +1,9 @@
 [Desktop Entry]
+Name=ACBR Comic Book Reader
+Exec="acbr-comic-book-reader" %U
+Terminal=false
+Type=Application
+Icon=acbr-comic-book-reader
+StartupWMClass=ACBR Comic Book Reader
+Comment=Comic book reader and converter for CBZ, CBR, CB7, EPUB and PDF files
+Categories=Graphics;
