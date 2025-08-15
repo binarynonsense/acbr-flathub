@@ -42,16 +42,24 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/binarynonsense/flathub/38ac712501572b7ff1fa16874ac68890c75b5a27/screenshot_reader_1.jpeg</image>
+      <image>https://raw.githubusercontent.com/binarynonsense/acbr-flathub/01d933987bcb1356c3d4db2cb2b8101b8c50bf34/screenshots_01.png</image>
       <caption>Reading a comic book in single page mode</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/binarynonsense/flathub/38ac712501572b7ff1fa16874ac68890c75b5a27/screenshot_reader_2.jpeg</image>
+      <image>https://raw.githubusercontent.com/binarynonsense/acbr-flathub/01d933987bcb1356c3d4db2cb2b8101b8c50bf34/screenshots_02.png</image>
       <caption>Reading a comic book in double page mode</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/binarynonsense/flathub/38ac712501572b7ff1fa16874ac68890c75b5a27/screenshot_converter_1.jpeg</image>
+      <image>https://raw.githubusercontent.com/binarynonsense/acbr-flathub/01d933987bcb1356c3d4db2cb2b8101b8c50bf34/screenshots_03.png</image>
       <caption>Using the comic books converter tool</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/binarynonsense/acbr-flathub/01d933987bcb1356c3d4db2cb2b8101b8c50bf34/screenshots_04.png</image>
+      <caption>Reading an RSS feed while listening to a podcast</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/binarynonsense/acbr-flathub/01d933987bcb1356c3d4db2cb2b8101b8c50bf34/screenshots_05.png</image>
+      <caption>Using the home screen</caption>
     </screenshot>
   </screenshots>
   <releases>
