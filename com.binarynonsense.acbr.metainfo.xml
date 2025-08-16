@@ -63,6 +63,21 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.12.2" date="2025-08-16">
+      <description>
+        <ul>
+          <li>
+            Fixed gutenberg tool not opening files in flatpak version. The cache to store downloaded files is now created in the same folder as the config files.
+          </li>
+          <li>
+            Fixed not being able to use spaces and the arrow keys to edit the names of the home screen favorites.
+          </li>
+          <li>
+            Fixed log showing a generic error message when there's not enough free disk space in the temp folder to extract files during conversions (can happen with the default temp folder and moderately big files in the flatpak version, for example).
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.12.1" date="2025-08-08">
       <description>
         <ul>
