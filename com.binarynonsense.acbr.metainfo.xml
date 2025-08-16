@@ -67,10 +67,10 @@
       <description>
         <ul>
           <li>
-            Fixed gutenberg tool not opening files in flatpak version. The cache to store downloaded files is now created in the same folder as the config files.
+            Fixed failing to open files from the search results of the gutenberg tool in the flatpak version due to lack of write permissions. The cache to store downloaded files is now created in the same folder as the config files.
           </li>
           <li>
-            Fixed not being able to use spaces and the arrow keys to edit the names of the home screen favorites.
+            Fixed not being able to use the space bar and the arrow keys to edit the names of the home screen favorites.
           </li>
           <li>
             Fixed log showing a generic error message when there's not enough free disk space in the temp folder to extract files during conversions (can happen with the default temp folder and moderately big files in the flatpak version, for example).
