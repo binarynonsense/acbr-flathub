@@ -1,0 +1,90 @@
+app-id: com.binarynonsense.acbr
+runtime: org.freedesktop.Platform
+runtime-version: "24.08"
+sdk: org.freedesktop.Sdk
+base: org.electronjs.Electron2.BaseApp
+base-version: "24.08"
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.node20
+command: run.sh
+separate-locales: false
+rename-icon: acbr-comic-book-reader
+finish-args:
+  - --socket=x11
+  - --share=ipc
+  - --device=dri
+  - --socket=pulseaudio
+  - --filesystem=home
+  - --share=network
+  # needed to access the gamepad
+  - --device=all
+  - --filesystem=/run/udev:ro
+  # needed to avoid some crashes caused by sharp in some systems
+  - --env=G_SLICE=always-malloc
+  # use same mouse cursors as host, to avoid weird cursor sizing under Wayland with mixed DPI
+  - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
+build-options:
+  append-path: /usr/lib/sdk/node20/bin
+  env:
+    NPM_CONFIG_LOGLEVEL: info
+modules:
+  - name: acbr
+    buildsystem: simple
+    build-options:
+      env:
+        XDG_CACHE_HOME: /run/build/acbr/flatpak-node/cache
+        npm_config_cache: /run/build/acbr/flatpak-node/npm-cache
+        npm_config_offline: "true"
+    build-commands:
+      - jq '.build.linux.target="dir"' <<<$(<package.json) > package.json
+      - jq '.build.files=["!flatpak-node${/*}"]' <<<$(<package.json) > package.json
+      - npm install --offline
+      - chmod +x node_modules/7zip-bin/linux/x64/7za
+      - npm run build:linux
+      - mv "dist/linux-unpacked" ${FLATPAK_DEST}/acbr
+      # add licenses
+      - rm ${FLATPAK_DEST}/acbr/LICENSE.electron.txt
+      - rm ${FLATPAK_DEST}/acbr/LICENSES.chromium.html
+      - mv licenses ${FLATPAK_DEST}/acbr/licenses
+      # needed so sharp finds libvips
+      - cp node_modules/@img/sharp-libvips-linux-x64/lib/libvips-cpp.so.42 ${FLATPAK_DEST}/acbr/
+      # install desktop file
+      - install -Dm644 acbr-comic-book-reader.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
+      - desktop-file-edit --set-key=Exec --set-value='run.sh %U' ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
+      # patch desktop filename in built-in package.json
+      - patch-desktop-filename ${FLATPAK_DEST}/acbr/resources/app.asar
+      # install icons
+      - install -Dm644 icon_256x256.png ${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/acbr-comic-book-reader.png
+      # install app wrapper
+      - install -Dm755 run.sh -t ${FLATPAK_DEST}/bin/
+      # install metadata
+      - install -Dm644 com.binarynonsense.acbr.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo/
+    sources:
+      - type: archive
+        archive-type: tar-gzip
+        url: https://api.github.com/repos/binarynonsense/comic-book-reader/tarball/v3.12.2
+        sha256: 02b63198bf50905b8353478db19c324746b0c96de4aab17f9765729b116b7ec7
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/binarynonsense/comic-book-reader/releases/latest
+          version-query: .tag_name
+          url-query: .tarball_url
+          is-main-source: true
+      - generated-sources.json
+      - type: file
+        dest-filename: com.binarynonsense.acbr.metainfo.xml
+        url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/d7c43e45ac3bf35eca906d1f5fb464bb07d1d0b7/com.binarynonsense.acbr.metainfo.xml
+        sha256: b574f82efe5a424a6850f4800a81b6b002f3e93e1decc65e584ef4d9ce051535
+      - type: file
+        dest-filename: acbr-comic-book-reader.desktop
+        url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/315fd5b09a52f2d04636b4c83693f00f974a5e7b/acbr-comic-book-reader.desktop
+        sha256: 338c0fc48104ff5b1aebe391cc607acfbe319592da7af6a4055d4a1df6cb046b
+      - type: file
+        dest-filename: icon_256x256.png
+        url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/2482f42ed38c7bc2178965a1c81dbea60c11cbba/icon_256x256.png
+        sha256: a598bd2cefe99372d930028102b881767d65406edbf3d8432bceae952d9983a6
+      # wrapper to launch the app
+      - type: script
+        dest-filename: run.sh
+        commands:
+          - zypak-wrapper.sh /app/acbr/acbr-comic-book-reader "$@"
