@@ -7,6 +7,7 @@
   <project_license>BSD-2-Clause</project_license>
   <url type="homepage">https://www.binarynonsense.com/software/</url>
   <url type="vcs-browser">https://github.com/binarynonsense/comic-book-reader</url>
+  <url type="bugtracker">https://github.com/binarynonsense/comic-book-reader/issues</url>
   <launchable type="desktop-id">com.binarynonsense.acbr.desktop</launchable>
   <icon type="stock">com.binarynonsense.acbr</icon>
   <branding>
