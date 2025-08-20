@@ -64,6 +64,21 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.12.3" date="2025-08-20">
+      <description>
+        <ul>
+          <li>
+            Added a button to open the output folder in the convert comic books, extract comic books, convert images and create comic book tools.
+          </li>
+          <li>
+            Fixed PDF metadata editor showing 'undefined' as the value for some entries if they were empty.
+          </li>
+          <li>
+            Fixed audio player always leaving space for the toolbar when placed at the bottom even in the tools and home screen.
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.12.2" date="2025-08-16">
       <description>
         <ul>
