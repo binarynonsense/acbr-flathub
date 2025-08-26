@@ -62,8 +62,8 @@ modules:
     sources:
       - type: archive
         archive-type: tar-gzip
-        url: https://api.github.com/repos/binarynonsense/comic-book-reader/tarball/v3.12.3
-        sha256: b5bfda81dc85fea1c4080ca5e6f1d896031ce410cf3dd6e134d2bc8fba76cfd6
+        url: https://api.github.com/repos/binarynonsense/comic-book-reader/tarball/v3.12.4
+        sha256: 14ceec761e5f4bc5c602a4077ae21807b54c0a324125777a1aaa87b471da5b8d
         x-checker-data:
           type: json
           url: https://api.github.com/repos/binarynonsense/comic-book-reader/releases/latest
