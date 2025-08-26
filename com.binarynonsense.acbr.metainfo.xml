@@ -64,6 +64,18 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.12.4" date="2025-08-26">
+      <description>
+        <ul>
+          <li>
+            Fixed convert comic books, extract comic books, convert images and create comic book tools progressively slowing down while processing a large batch of files, which was due to the log text's increasingly bigger length impacting the time it took to update it.
+          </li>
+          <li>
+            Fixed PDF metadata editor getting stuck trying to load data from files with undefined creation and/or modification dates.
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.12.3" date="2025-08-20">
       <description>
         <ul>
