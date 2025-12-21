@@ -71,10 +71,10 @@
             Added some small quality of life improvements to the Home Screen, like drag and drop to sort the favorites list, new options to open the containing folder of a file in one the lists or add one in the recent files list to the favorites one...
           </li>
           <li>
-            Added two new theme preferences: one that sets the theme to "ACBR Light" or "ACBR Dark" based on the operative system settings and the other based on the time of day (the time at which the light and dark themes are set can be customized).
+            Added two new theme preferences: one that automatically sets the theme to "ACBR Light" or "ACBR Dark" based on the operative system settings and the other based on the time of day (the time at which the light and dark themes are set can be customized).
           </li>
           <li>
-            Added 'Open Containing Folder' entry to the readers's context menu.
+            Added 'Open Containing Folder' entry to the reader's context menu.
           </li>
           <li>
             Fixed CBZ files containing __MACOSX folders failing to load in the reader and convert in the tools as they included invalid image files. __MACOSX folders are now ignored.
