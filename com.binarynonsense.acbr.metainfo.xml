@@ -64,6 +64,15 @@
     </screenshot>
   </screenshots>
   <releases>
+  <release version="3.14.1" date="2026-01-10">
+      <description>
+        <ul>
+          <li>
+            Fixed default page mode setting in preferences not being correctly saved when the "Double Page (Center First Page)" option was chosen.
+          </li>
+        </ul>
+      </description>
+    </release>
   <release version="3.14.0" date="2026-01-02">
       <description>
         <ul>
