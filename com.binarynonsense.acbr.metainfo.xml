@@ -64,6 +64,45 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.16.0" date="2026-02-08">
+      <description>
+        <ul>
+          <li>
+            Added an alternative PDF library, based on PDFium, that can be used instead of the default one, based on PDFjs, both in the Reader and the conversion tools. It can be set as the one to be used for the Reader in the program's preferences (File Formats section), and in the advanced settings of each tool for them. Hopefully, this may be of help as an alternative if a PDF file happens to have stability or compatibility issues with the default library. One current limitation is that some big files that the default one is able to load will fail to do with this new one.
+          </li>
+          <li>
+            Added a new section in the Preferences, Comic Book Reader, and moved some of the settings there.
+          </li>
+          <li>
+            Added a new setting in the Preferences, in the PDF subsection of the File Formats section, to select the dpi at which the pages of a PDF file are rendered in the Reader.
+          </li>
+          <li>
+            Added a new subsection in the Preferences, Advanced - External Files, to allow loading external files to add more localizations. I've also made a repository to share some unofficial ones I made using machine translation. One of my requirements to include a localization as part of ACBR is that it must be human made, for quality reasons, but I thought this would be useful for users that want to generate their own using that type of tools or test a human made one they are working on.
+          </li>
+          <li>
+            Added a System Monitor 'widget' that shows the system total CPU and Memory use. To show or hide it use the menu entry View - System Monitor. To get more accurate stats in the Flatpak version some extra permissions are required (see the wiki for more info).
+          </li>
+          <li>
+            Added an advanced option in the conversion tools to extract PDF pages based on a target height instead of dpi.
+          </li>
+          <li>
+            Improved the memory management and simplicity in the code that uses the PDFjs library.
+          </li>
+          <li>
+            Implemented the image processing (scale, change image format...) speed improvements from the previous version in the "Extract Comic Books" tool.
+          </li>
+          <li>
+            Added a new advanced option in the preferences to enable saving the debug events log to file (useful for bug reports).
+          </li>
+          <li>
+            Made the program resilient against malformed environment variables containing null bytes.
+          </li>
+          <li>
+            Fixed dpi calculations when rendering PDF pages with the default library. Resulting files are often bigger now for the same dpi setting, but that's because the previous calculations resulted in real dpis lower than the requested one.
+          </li>          
+        </ul>
+      </description>
+    </release>
    <release version="3.15.0" date="2026-01-19">
       <description>
         <ul>
