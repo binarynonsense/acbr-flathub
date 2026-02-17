@@ -25,7 +25,7 @@
     <p>ACBR is a free and open source comic book reader and converter.</p>
     <p>Main Features:</p>
     <ul>
-        <li>Compatible file formats: CBZ, CBR, CB7, PDF, EPUB, JPG, PNG, WebP and AVIF</li>
+        <li>Compatible file formats: CBZ, CBR, CB7, PDF, EPUB, MOBI, FB2, JPG, PNG, WebP and AVIF</li>
         <li>Single and double page modes, page rotation, integrated audio player, metadata editor, RSS reader, partial gamepad support...</li>
         <li>UI available in: English, Spanish, Russian, German, Arabic and Filipino</li>
     </ul>
@@ -64,6 +64,21 @@
     </screenshot>
   </screenshots>
   <releases>
+  <release version="3.17.0" date="2026-02-17">
+      <description>
+        <ul>
+          <li>
+            Added support for reading, converting from and extracting EPUB, FB2 and MOBI ebooks (newer formats like KF8 (AZW3) are not compatible).
+          </li>
+          <li>
+            Increased the performance reading and converting PDF and RAR files. Also, files of those types bigger than 2GB are now supported.
+          </li>
+          <li>
+            Fixed a bug introduced in the previous version that made the app not launch for new users :( I forgot to test launching the app with no config files for that release and, as no one opened an issue about it in the meantime, I didn't notice until I did the test for this new one, sorry about that.
+          </li>                 
+        </ul>
+      </description>
+    </release>
     <release version="3.16.0" date="2026-02-08">
       <description>
         <ul>
