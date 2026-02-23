@@ -64,7 +64,20 @@
     </screenshot>
   </screenshots>
   <releases>
-  <release version="3.17.0" date="2026-02-17">
+    <release version="3.17.1" date="2026-02-20">
+      <description>
+        <ul>
+          <li>
+            Fixed creating a comic book from only images not working in the previous version.
+          </li>
+          <li>
+            Fixed setting a non-writable folder as temp folder breaking the app.
+          </li>
+          <li>              
+        </ul>
+      </description>
+    </release>
+    <release version="3.17.0" date="2026-02-17">
       <description>
         <ul>
           <li>
