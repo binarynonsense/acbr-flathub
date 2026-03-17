@@ -62,13 +62,13 @@ modules:
     sources:
       - type: archive
         archive-type: tar-gzip
-        url: https://api.github.com/repos/binarynonsense/comic-book-reader/tarball/v3.17.1
-        sha256: 6c45f58ee7bfa81c1b98936cfe4de55abbb86471cd57e68e3ee05f34b25528b7
+        url: https://api.github.com/repos/binarynonsense/comic-book-reader/tarball/v3.18.0
+        sha256: a70647c1c4402640149caeadcbdf3707d01ff10a5a404a8b2e0d69f8c19549e7
       - generated-sources.json
       - type: file
         dest-filename: com.binarynonsense.acbr.metainfo.xml
-        url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/e8864f8b1eb7abebe3c7de3268313c89c8e2b0e1/com.binarynonsense.acbr.metainfo.xml
-        sha256: 2c6bcdb0becedc306f96f1d5f9e48e83942e7e5a443ebb4b464c49186e336ab3
+        url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/6f47143f930cb614a4bd81fef3ca7270e3d5c526/com.binarynonsense.acbr.metainfo.xml
+        sha256: 0ef0d7e03d8558044fc685238af31c75594a886c152b36bf1a82886cc130c229
       - type: file
         dest-filename: acbr-comic-book-reader.desktop
         url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/315fd5b09a52f2d04636b4c83693f00f974a5e7b/acbr-comic-book-reader.desktop
