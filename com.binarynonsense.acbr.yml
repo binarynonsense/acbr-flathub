@@ -67,8 +67,8 @@ modules:
       - generated-sources.json
       - type: file
         dest-filename: com.binarynonsense.acbr.metainfo.xml
-        url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/6f47143f930cb614a4bd81fef3ca7270e3d5c526/com.binarynonsense.acbr.metainfo.xml
-        sha256: 0ef0d7e03d8558044fc685238af31c75594a886c152b36bf1a82886cc130c229
+        url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/3faf4c1fbbfd82fcac223d8cdd47ead1aafa7d0d/com.binarynonsense.acbr.metainfo.xml
+        sha256: c21e9ca51d7898298eaf8e01c84b72754cef5892b936cd262c041e7aae270211
       - type: file
         dest-filename: acbr-comic-book-reader.desktop
         url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/315fd5b09a52f2d04636b4c83693f00f974a5e7b/acbr-comic-book-reader.desktop
