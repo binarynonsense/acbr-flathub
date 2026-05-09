@@ -4,7 +4,7 @@
   <name>ACBR</name>
   <summary>Comic book reader and converter</summary>
   <metadata_license>MIT</metadata_license>
-  <project_license>BSD-2-Clause</project_license>
+  <project_license>AGPL-3.0-or-later</project_license>
   <url type="homepage">https://www.binarynonsense.com/software/</url>
   <url type="vcs-browser">https://github.com/binarynonsense/comic-book-reader</url>
   <url type="bugtracker">https://github.com/binarynonsense/comic-book-reader/issues</url>
