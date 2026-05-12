@@ -64,6 +64,24 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.21.1" date="2026-05-12">
+      <description>
+        <ul>
+          <li>
+            Made feed items with both description and content data in the RSS Reader start showing only the description and a expand/collapse button to show/hide the content, so it's easier to read and navigate them.
+          </li>
+          <li>
+            Added Zona Negativa's feed to the RSS Reader's defaults.
+          </li>
+          <li>
+            Fixed the changelog formatting in the check for updates modal when there is a new version.
+          </li>
+          <li>
+            Fixed the Media Player's subtitle rendering so tags (italics, bold...) are shown correctly.
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.21.0" date="2026-05-08">
       <description>
         <ul>
