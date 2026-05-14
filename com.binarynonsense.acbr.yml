@@ -39,7 +39,6 @@ modules:
       - jq '.build.linux.target="dir"' <<<$(<package.json) > package.json
       - jq '.build.files=["!flatpak-node${/*}"]' <<<$(<package.json) > package.json
       - npm install --offline
-      - chmod +x node_modules/7zip-bin/linux/x64/7za
       - npm run build:linux
       - mv "dist/linux-unpacked" ${FLATPAK_DEST}/acbr
       # add licenses
@@ -62,13 +61,13 @@ modules:
     sources:
       - type: archive
         archive-type: tar-gzip
-        url: https://api.github.com/repos/binarynonsense/comic-book-reader/tarball/v3.21.1
-        sha256: b6971e2c64d845267b4e04882f072f28ed9cce739852e41461a6c1186dec1ae2
+        url: https://api.github.com/repos/binarynonsense/comic-book-reader/tarball/v3.21.2
+        sha256: 16728f4388ddaf6fda179efe6d5dab00bc69f73f51d014bb0dd3079fee3525bb
       - generated-sources.json
       - type: file
         dest-filename: com.binarynonsense.acbr.metainfo.xml
-        url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/5938deba4064913612a10d434ecfd16859d871ad/com.binarynonsense.acbr.metainfo.xml
-        sha256: 5df25e78af9cc4c3fc7c91c9eaec3b60128a97c9114cdace8361d216bcd2e3bb
+        url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/b62444404918c69093d2fbf5af95552cd0105853/com.binarynonsense.acbr.metainfo.xml
+        sha256: 6cc75648d012c8976d78285855bbf1de449c06bfe3ece77b2a6513a8d41c4320
       - type: file
         dest-filename: acbr-comic-book-reader.desktop
         url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/315fd5b09a52f2d04636b4c83693f00f974a5e7b/acbr-comic-book-reader.desktop
