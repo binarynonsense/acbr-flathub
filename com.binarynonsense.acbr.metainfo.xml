@@ -64,6 +64,18 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.21.3" date="2026-05-15">
+      <description>
+        <ul>
+          <li>
+            Added more ways to manage the "Convert Comics", "Extract Comics" and "Create Comic" tools' input list. The "Add Files", "Add Folders" and "Clear List" buttons are now at the top of the list and when the list grows bigger than 10 elements another set of the same buttons is placed at its bottom. Also, when right-clicking inside the list, the context menu now shows entries for those actions.
+          </li>
+          <li>
+            Fixed setting the "Convert Comics" tool's "Input Folders Contain" advanced input option to "The image files from a single comic book each" no longer working.
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.21.2" date="2026-05-14">
       <description>
         <ul>
