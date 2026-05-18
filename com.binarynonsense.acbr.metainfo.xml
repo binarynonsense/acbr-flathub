@@ -64,6 +64,21 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.21.4" date="2026-05-18">
+      <description>
+        <ul>
+          <li>
+            Fixed images-only MOBIs not working.
+          </li>
+          <li>
+            Fixed images-only EPUBs that don't store the image paths in img tags not working, and improved the code for the already working ones.
+          </li>
+          <li>
+            Fixed EPUB, MOBI and PDF files not working correctly on the Windows version of ACBR if the app is placed in a path containing spaces.
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.21.3" date="2026-05-15">
       <description>
         <ul>
