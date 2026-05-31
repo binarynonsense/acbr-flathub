@@ -1,9 +1,9 @@
 app-id: com.binarynonsense.acbr
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: "24.08"
+base-version: "25.08"
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node20
 command: run.sh
@@ -19,8 +19,6 @@ finish-args:
   # needed to access the gamepad
   - --device=all
   - --filesystem=/run/udev:ro
-  # needed to avoid some crashes caused by sharp in some systems
-  - --env=G_SLICE=always-malloc
   # use same mouse cursors as host, to avoid weird cursor sizing under Wayland with mixed DPI
   - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
 build-options:
@@ -46,7 +44,7 @@ modules:
       - rm ${FLATPAK_DEST}/acbr/LICENSES.chromium.html
       - mv licenses ${FLATPAK_DEST}/acbr/licenses
       # needed so sharp finds libvips
-      - cp node_modules/@img/sharp-libvips-linux-x64/lib/libvips-cpp.so.42 ${FLATPAK_DEST}/acbr/
+      - cp node_modules/@img/sharp-libvips-linux-x64/lib/libvips-cpp.so.8.17.3 ${FLATPAK_DEST}/acbr/
       # install desktop file
       - install -Dm644 acbr-comic-book-reader.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
       - desktop-file-edit --set-key=Exec --set-value='run.sh %U' ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
@@ -66,8 +64,8 @@ modules:
       - generated-sources.json
       - type: file
         dest-filename: com.binarynonsense.acbr.metainfo.xml
-        url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/342cfec62be3bf0b9c1b5d6ececf1b6dc7cf88a2/com.binarynonsense.acbr.metainfo.xml
-        sha256: a70717b0291a7ea5129229a159f8dd2a72b2e0be99fd568e1ac35c7598c58e10
+        url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/7be6605c1d490d2ac165d9ad58c5dbad31ec3cce/com.binarynonsense.acbr.metainfo.xml
+        sha256: 86af0e510db0120ce3d38948e0debf69e46a3bfc51e2810f8e065ab004819010
       - type: file
         dest-filename: acbr-comic-book-reader.desktop
         url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/315fd5b09a52f2d04636b4c83693f00f974a5e7b/acbr-comic-book-reader.desktop
