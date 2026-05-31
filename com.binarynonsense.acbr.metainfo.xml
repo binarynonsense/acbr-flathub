@@ -25,7 +25,7 @@
     <p>ACBR is a free and open source comic book reader and converter.</p>
     <p>Main Features:</p>
     <ul>
-        <li>Compatible file formats: CBZ, CBR, CB7, PDF, EPUB, MOBI, FB2, JPG, PNG, WebP and AVIF</li>
+        <li>Compatible file formats: CBZ, CBR, CB7, PDF, EPUB, MOBI 7, FB2, JPG, PNG, WebP and AVIF</li>
         <li>Single and double page modes, page rotation, integrated video and audio player, metadata editor, RSS reader, partial gamepad support...</li>
         <li>UI available in: English, Spanish, Russian, German, Arabic, Filipino and Japanese</li>
     </ul>
@@ -43,11 +43,11 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/binarynonsense/acbr-flathub/01d933987bcb1356c3d4db2cb2b8101b8c50bf34/screenshots_01.png</image>
+      <image>https://raw.githubusercontent.com/binarynonsense/acbr-flathub/ab91b846ca9f9bcf9fa37647a0c7350bd9cc8fcd/screenshots_01.png</image>
       <caption>Reading a comic book in single page mode</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/binarynonsense/acbr-flathub/01d933987bcb1356c3d4db2cb2b8101b8c50bf34/screenshots_02.png</image>
+      <image>https://raw.githubusercontent.com/binarynonsense/acbr-flathub/ab91b846ca9f9bcf9fa37647a0c7350bd9cc8fcd/screenshots_02.png</image>
       <caption>Reading a comic book in double page mode</caption>
     </screenshot>
     <screenshot>
@@ -64,6 +64,42 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.22.0" date="2026-05-31">
+      <description>
+        <ul>
+          <li>
+            Updated the Flatpak version's runtime to 25.08.
+          </li>
+          <li>
+            Added a new zoom mode to the Reader, "Fit to Both", to fit the page/s to the width and height of the viewable area.
+          </li>
+          <li>
+            Expanded the "Automatic Page Turn" setting in the "Comic Book Reader > Navigation" subsection of the Preferences. Now, when selecting the "On scroll boundaries" option, some time values can be changed to customize its behavior.
+          </li>
+          <li>
+            Made scrolling the pages using the keyboard smoother on key presses, instead of instant, and more precise if you keep holding down.
+          </li>
+          <li>
+            Added more advanced options to the "Convert Images" tool.
+          </li>
+          <li>
+            Increased the timeout for the Project Gutenberg search tool and added a cancel button, as the website it relies on can be quite slow to respond lately.
+          </li>
+          <li>
+            Updated the image processing library, sharp, to a newer version.
+          </li>
+          <li>
+            Refactored all the image operations' code to avoid crashes due to glib conflicts caused by the new runtime and image library update
+          </li>
+          <li>
+            Fixed books with broken image files getting stuck trying to load the error page image due to a path change in a recent update.
+          </li>
+          <li>
+            Fixed the test images used by some tools showing as broken due to a path change in a recent update.
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.21.4" date="2026-05-18">
       <description>
         <ul>
