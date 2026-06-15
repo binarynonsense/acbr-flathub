@@ -35,7 +35,7 @@ modules:
         npm_config_offline: "true"
     build-commands:
       - jq '.build.linux.target="dir"' <<<$(<package.json) > package.json
-      - jq '.build.files=["!flatpak-node${/*}"]' <<<$(<package.json) > package.json
+      - jq '.build.files += ["!flatpak-node${/*}"]' <<<$(<package.json) > package.json
       - npm install --offline
       - npm run build:linux
       - mv "dist/linux-unpacked" ${FLATPAK_DEST}/acbr
