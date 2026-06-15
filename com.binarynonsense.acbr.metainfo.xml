@@ -64,6 +64,18 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.23.1" date="2026-06-15">
+      <description>
+        <ul>
+          <li>
+            Reduced the size of the flatpak build available on Flathub.
+          </li>
+          <li>
+            Fixed the Digital Comic Museum tool no longer working.
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.23.0" date="2026-06-14">
       <description>
         <ul>
