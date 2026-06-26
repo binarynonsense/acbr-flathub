@@ -10,7 +10,8 @@ command: run.sh
 separate-locales: false
 rename-icon: acbr-comic-book-reader
 finish-args:
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
   - --share=ipc
   - --device=dri
   - --socket=pulseaudio
