@@ -63,19 +63,7 @@
       <caption>Using the home screen</caption>
     </screenshot>
   </screenshots>
-  <releases>
-    <release version="3.23.1" date="2026-06-15">
-      <description>
-        <ul>
-          <li>
-            Reduced the size of the flatpak build available on Flathub.
-          </li>
-          <li>
-            Fixed the Digital Comic Museum tool no longer working.
-          </li>
-        </ul>
-      </description>
-    </release>
+  <releases>    
     <release version="3.24.0" date="2026-06-26">
       <description>
         <ul>
@@ -108,6 +96,18 @@
           </li>
           <li>
             Fixed CBR creation not working on the flatpak build.
+          </li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.23.1" date="2026-06-15">
+      <description>
+        <ul>
+          <li>
+            Reduced the size of the flatpak build available on Flathub.
+          </li>
+          <li>
+            Fixed the Digital Comic Museum tool no longer working.
           </li>
         </ul>
       </description>
