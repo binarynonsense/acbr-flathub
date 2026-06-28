@@ -64,6 +64,15 @@
     </screenshot>
   </screenshots>
   <releases>    
+    <release version="3.24.1" date="2026-06-28">
+      <description>
+        <ul>
+          <li>
+            Fixed the background image in the Home Screen being taller than intended, showing a couple pixels of the next row of covers.
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.24.0" date="2026-06-26">
       <description>
         <ul>
