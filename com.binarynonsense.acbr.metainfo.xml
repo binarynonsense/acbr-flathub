@@ -64,6 +64,18 @@
     </screenshot>
   </screenshots>
   <releases>    
+    <release version="3.24.2" date="2026-06-29">
+      <description>
+        <ul>
+          <li>
+            Removed the "Digital Comic Museum" tool, as new restrictions on the website made maintaining it no longer possible.
+          </li>
+          <li>
+            Disabled the "Help > View the Wiki" entry in the menu bar when another tool is open so it can't be used while the current one is potentially doing work.
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.24.1" date="2026-06-28">
       <description>
         <ul>
