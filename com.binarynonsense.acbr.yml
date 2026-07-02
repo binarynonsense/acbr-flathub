@@ -5,7 +5,7 @@ sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: "25.08"
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node20
+  - org.freedesktop.Sdk.Extension.node24
 command: run.sh
 separate-locales: false
 rename-icon: acbr-comic-book-reader
@@ -23,7 +23,7 @@ finish-args:
   # use same mouse cursors as host, to avoid weird cursor sizing under Wayland with mixed DPI
   - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
 build-options:
-  append-path: /usr/lib/sdk/node20/bin
+  append-path: /usr/lib/sdk/node24/bin
   env:
     NPM_CONFIG_LOGLEVEL: info
 modules:
@@ -60,13 +60,13 @@ modules:
     sources:
       - type: archive
         archive-type: tar-gzip
-        url: https://api.github.com/repos/binarynonsense/comic-book-reader/tarball/v3.24.2
-        sha256: 08afd3c72fae2dad7dadb735de5344fd2f5e85556cbb1cc8906e8b22f5e3cc82
+        url: https://api.github.com/repos/binarynonsense/comic-book-reader/tarball/v3.25.0
+        sha256: 9fe4d02277225916426ea640e038a59b915540847be99caf7cdfeefeedf18b95
       - generated-sources.json
       - type: file
         dest-filename: com.binarynonsense.acbr.metainfo.xml
-        url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/fd901b111996214ea904eb06384465b1f1fe8ca2/com.binarynonsense.acbr.metainfo.xml
-        sha256: e73685890bfaad72f15a4239ec279d365995d0e40fd21390087071110e02a6bc
+        url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/c8ee1a0ff835c21de526ea658964b4e2f39a37fe/com.binarynonsense.acbr.metainfo.xml
+        sha256: 7ccfabea920be18e43c2b50e23ad047796114e7b55bc624291faf6f9fc37e04b
       - type: file
         dest-filename: acbr-comic-book-reader.desktop
         url: https://raw.githubusercontent.com/binarynonsense/acbr-flathub/315fd5b09a52f2d04636b4c83693f00f974a5e7b/acbr-comic-book-reader.desktop
