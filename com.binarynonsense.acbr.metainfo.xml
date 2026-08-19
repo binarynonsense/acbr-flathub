@@ -64,6 +64,21 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.25.1" date="2026-08-19">
+      <description>
+        <ul>
+          <li>
+            Fixed the Reader's EPUB type selection modal (shown when opening a new EPUB file and "File Formats > EPUB > Book Type" is not set to the default, "Autodetect", in the Preferences) silently breaking and not opening the book after a type button is clicked and the modal closes.
+          </li>
+          <li>
+            Replaced some of the core libraries with custom code.
+          </li>
+          <li>
+            Updated some of the core libraries to newer versions.
+          </li>
+        </ul>
+      </description>
+    </release> 
     <release version="3.25.0" date="2026-07-02">
       <description>
         <ul>
