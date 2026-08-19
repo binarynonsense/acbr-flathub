@@ -38,7 +38,9 @@ modules:
       - jq '.build.linux.target="dir"' <<<$(<package.json) > package.json
       - jq '.build.files += ["!flatpak-node${/*}"]' <<<$(<package.json) > package.json
       - npm install --offline
-      - npm run build:linux
+      #- npm run build:linux
+      # make sure electron builder uses cached version to avoid bug in v26.15.3
+      - npm run build:linux -- -c.electronDist=/run/build/acbr/flatpak-node/cache/electron
       - mv "dist/linux-unpacked" ${FLATPAK_DEST}/acbr
       # add licenses
       - rm ${FLATPAK_DEST}/acbr/LICENSE.electron.txt
