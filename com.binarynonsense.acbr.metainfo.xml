@@ -27,7 +27,7 @@
     <ul>
         <li>Compatible file formats: CBZ, CBR, CB7, PDF, EPUB, MOBI 7, FB2, JPG, PNG, WebP and AVIF</li>
         <li>Single and double page modes, page rotation, integrated video and audio player, metadata editor, RSS reader, partial gamepad support...</li>
-        <li>UI available in: English, Spanish, Russian, German, Arabic, Filipino and Japanese</li>
+        <li>UI available in: English, Spanish, Russian, German, Arabic, Filipino, Japanese and French</li>
     </ul>
     <p>Included Tools:</p>
     <ul>
@@ -64,6 +64,27 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.25.2" date="2026-09-19">
+      <description>
+        <ul>
+          <li>
+            Fixed the media player window in stand-alone mode on Windows shrinking every time it was moved due to a bug in the Electron version used in the previous version.
+          </li>
+          <li>
+            Removed the "Comic Book Plus" tool, as new restrictions on the website made maintaining it no longer possible.
+          </li>
+          <li>
+            Added French localization (contributed by Lorsoen).
+          </li>
+          <li>
+            Updated the URL for r/comicbooks in the default RSS feeds.
+          </li>
+          <li>
+            Updated Electron to a newer version.
+          </li>
+        </ul>
+      </description>
+    </release> 
     <release version="3.25.1" date="2026-08-19">
       <description>
         <ul>
