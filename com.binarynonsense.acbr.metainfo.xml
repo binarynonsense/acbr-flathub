@@ -64,6 +64,15 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.26.1" date="2026-10-12">
+      <description>
+        <ul>
+          <li>
+            Fixed the flatpak build failing to encrypt credentials and add servers to the saved list in the Server Browser. A change in the way the credentials are encrypted and decrypted was needed. Besides fixing the problem this new method has better long term support but, sadly, it also means that any server saved with the previous version of ACBR will need to be deleted from the list and saved again if a Linux build was used (the Windows build seems to be compatible).
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.26.0" date="2026-10-12">
       <description>
         <ul>
