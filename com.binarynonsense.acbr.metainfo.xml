@@ -26,7 +26,7 @@
     <p>Main Features:</p>
     <ul>
         <li>Compatible file formats: CBZ, CBR, CB7, PDF, EPUB, MOBI 7, FB2, JPG, PNG, WebP and AVIF</li>
-        <li>Single and double page modes, page rotation, integrated video and audio player, metadata editor, RSS reader, partial gamepad support...</li>
+        <li>Single and double page modes, page rotation, integrated video and audio player, metadata editor, Komga and Kavita server browser, RSS reader, partial gamepad support...</li>
         <li>UI available in: English, Spanish, Russian, German, Arabic, Filipino, Japanese and French</li>
     </ul>
     <p>Included Tools:</p>
@@ -64,6 +64,24 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.26.0" date="2026-10-12">
+      <description>
+        <ul>
+          <li>
+            Added support for Komga and Kavita media servers. The menu "Servers > Server Browser" now opens a tool to connect to, browse and open books from them.
+          </li>
+          <li>
+            Added more advanced PNG image options to the conversion tools and a new output toggle to make more clear when the advanced image options are going to be applied or not, being now able to force them to be applied even when a 100% scale is set and "Keep original" is selected as image format (by default, the original untouched images were always used in this case, if possible, with no option to override it).
+          </li>
+          <li>
+            Added a private mode that can be enabled from "File > Private Mode" that makes the file history and reading progress not be updated during that session while it's on.
+          </li>
+          <li>
+            Fixed the advanced image processing options not applying when the output image format was set to "Keep original" in the conversion tools.
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.25.2" date="2026-09-19">
       <description>
         <ul>
