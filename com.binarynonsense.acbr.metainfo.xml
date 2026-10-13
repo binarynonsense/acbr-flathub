@@ -76,6 +76,15 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.26.3" date="2026-10-13">
+      <description>
+        <ul>
+          <li>
+            Fixed a bug introduced in the previous release that made switching between servers not work in the Server Browser under some circumstances.
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.26.2" date="2026-10-13">
       <description>
         <ul>
