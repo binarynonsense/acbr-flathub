@@ -21,6 +21,20 @@
     <name>Álvaro García</name>
   </developer>
   <content_rating type="oars-1.1"/>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+  </recommends>
+  <supports>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+    <control>gamepad</control>
+    <control>console</control>
+  </supports>
+  <requires>
+    <display_length compare="ge">768</display_length>
+  </requires>
   <description>
     <p>ACBR is a free and open source comic book reader and converter.</p>
     <p>Main Features:</p>
@@ -64,6 +78,15 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.26.2" date="2026-10-13">
+      <description>
+        <ul>
+          <li>
+            Fixed not being able to browse a server in the Server Browser if a connection with it was already established from the reader to open a book from the history and it is still the current one.
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.26.1" date="2026-10-12">
       <description>
         <ul>
