@@ -26,8 +26,6 @@
     <control>pointing</control>
   </recommends>
   <supports>
-    <control>keyboard</control>
-    <control>pointing</control>
     <control>touch</control>
     <control>gamepad</control>
     <control>console</control>
